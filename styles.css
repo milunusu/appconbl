@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('landingback.png'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden; 
+}
+
+.full-illustration {
+    width: 761px; 
+    height: 434px; 
+    position: absolute;
+    bottom: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+}
+
+.line1 {
+    font-size: 20px;
+    position: absolute;
+    top: -300px; 
+    left: -120px; 
+    margin: 0;
+    white-space: nowrap;
+    font-family: 'Alexandria', sans-serif;
+}
+
+.line2 {
+    font-size: 80px;
+    position: absolute;
+    top: -300px; 
+    left: -10px; 
+    margin: 0;
+    font-family: 'Arial Black', Arial, sans-serif;
+}
+
+.line3 {
+    font-size: 20px;
+    position: absolute;
+    top: -200px; 
+    left: 260px;  
+    margin: 0;
+    white-space: nowrap;
+    font-family: 'Alexandria', sans-serif; 
+}
+
+.line4 {
+    font-size: 20px;
+    position: absolute;
+    top: -130px; 
+    left: -10px;  
+    margin: 0;
+    white-space: nowrap;
+    font-family: 'Alexandria', sans-serif; 
+}
+
+.email-container {
+    margin-top: -40px; 
+    text-align: left;
+    display: flex;       
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: -40px; 
+}
+
+.email-label {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    display: inline-block;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.email-input {
+    width: 290px;
+    height: 20px;
+    border: none;
+    border-bottom: 3px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    font-family: 'Alexandria', sans-serif;
+}
+
+.email-input:hover,
+.email-input:focus {
+    opacity: 1;
+    outline: none;
+}
+
+.email-label:hover {
+    opacity: 1;
+}
+
+.email-input::placeholder {
+    color: white;
+    opacity: 1; 
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Alexandria', Light, sans-serif; 
+}
+
+.submit-button {
+    margin-left: 65px; 
+    margin-top: 35px; 
+    width: 175px; 
+    height: 40px; 
+    border: none;
+    border-radius: 5px; 
+    background-color: white; 
+    color: transparent; 
+    font-family: 'Alexandria', sans-serif;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.7; 
+    position: relative; 
+    overflow: hidden; 
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.submit-button::before {
+    content: "Submit"; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('landingback.png'); 
+    background-size: cover; 
+    background-position: center;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    text-align: center;
+    line-height: 40px; 
+    font-size: 20px;
+    font-family: 'Alexandria', sans-serif;
+    z-index: 1; 
+}
+
+.submit-button:hover,
+.submit-button:focus {
+    opacity: 1; 
+    outline: none;
+}
